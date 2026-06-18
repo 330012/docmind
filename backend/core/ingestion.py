@@ -3,6 +3,13 @@ Document ingestion pipeline.
 
 Loads documents from various formats (PDF, DOCX, TXT) and splits them
 into overlapping chunks with metadata for downstream embedding and retrieval.
+
+Note:
+    Loaders are imported from `langchain_community`, which carries a sunset
+    deprecation notice. As of the current LangChain release there is no
+    dedicated standalone replacement package for these specific loaders, so
+    community loaders remain the documented path. Migration is tracked as
+    future tech debt.
 """
 
 from pathlib import Path
